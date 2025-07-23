@@ -1,3 +1,4 @@
 task_env/
 _git statpycache_/
 db.sqlite3/
+node_modules/

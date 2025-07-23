@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document</title>
+        <link rel="stylesheet" href={% static "css/output.css" %}>
+    </head>
+    <body>
+        <div class="w-1/2 mx-auto mt-8">
+            <div>
+                {% if message %}
+                    <p>{{message }}</p>
+                {% endif %}
+            </div>
+            <form method="POST">
+                {% comment %} <input type="text" class="border-2 border-gray-300 w-full rounded-lg shadow-sm focus:border-rose-300 focus:ring-rose-500" placeholder="enter your query" > {% endcomment %}
+                {% csrf_token %}
+                {{form.as_p}}
+                {% comment %} <label >title</label>
+                <input type="text" name="title">
+                <label>number</label>
+                <input type="number" name="number"> {% endcomment %}
+                <button type="submit" class="bg-rose-300 px-3 py-2 text-white mt-2 rounded-sm">SUBMIT</button>
+                
+            </form>
+        </div>
+
+    </body>
+
+</html>

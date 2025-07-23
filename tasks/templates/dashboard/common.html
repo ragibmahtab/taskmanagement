@@ -1,0 +1,82 @@
+{% extends "dashboard/admin_dashboard.html" %}
+{% block title %}
+  common
+{% endblock title %}
+
+{% block tasks %}
+
+
+<!-- 1st grit -->
+            <div class=" max-w-[1400px] mx-auto p-3 border-2 border-transparent rounded-lg bg-white shadow-md">
+                <div class="grid grid-cols-4 border-b-2 border-gray-200 pb-3">
+                    <div class="text-zinc-500">TASK TITLE</div>
+                    <div class="text-zinc-500">PRIORITY</div>
+                    <div class="text-zinc-500">TEAM</div>
+                    <div class="text-zinc-500">CREATED AT</div>
+
+                </div>
+
+                <!-- 2nd grit -->
+                <div class="grid grid-cols-4 border-b-2 border-gray-200 pb-3 pt-1">
+                    <div class="flex gap-1 items-center" >
+                        <div class="w-2 h-2 rounded-full bg-green-800 shadow-md"></div>
+                        <div class="text-base font-medium text-black bg-red-800">Test Low Task</div>
+                    </div>
+                    <div class="text-base font-normal text-blue-700 w-11 h-7 border-2 border-slate-100 bg-blue-100 px-1 rounded-lg my-1">Low</div>
+                    <div class="flex -space-x-2">
+                        <div class="w-7 h-7 rounded-full bg-blue-500 px-1 border-2 border-white">CA</div>
+                        <div  class="w-7 h-7 rounded-full bg-blue-500 px-1 border-2 border-white">JS</div>
+                        <div  class="w-7 h-7 rounded-full bg-blue-500 px-1 border-2 border-white">B</div>
+                    </div>
+                    <div class="text-zinc-500">9 months ago</div>
+
+                </div>
+
+
+                <!-- 3rd grit -->
+                <div class="grid grid-cols-4 border-b-2 border-gray-200 pb-3 pt-1">
+                    <div class="flex gap-1 items-center" >
+                        <div class="w-2 h-2 rounded-full bg-amber-500 shadow-md"></div>
+                        <div class="text-base font-medium text-black">Test Task</div>
+                    </div>
+                    <div class="text-base font-normal text-zinc-500 bg-gray-300 w-17 h-7 border-2 border-zinc-300  px-1 rounded-lg my-1">Normal</div>
+                    <div class="flex -space-x-2 ">
+                        <div class="w-7 h-7 rounded-full bg-blue-500 border-2 border-white px-1">AJ</div>
+                        <div  class="w-7 h-7 rounded-full bg-blue-500 px-1 border-2 border-white">EV</div>
+                        <div  class="w-7 h-7 rounded-full bg-blue-500 px-1 border-2 border-white">B</div>
+                    </div>
+                    <div class="text-zinc-500">9 months ago</div>
+
+                </div>
+
+
+                <!-- 4th grit -->
+                <div class="grid grid-cols-4 border-gray-200 pb-3 pt-1">
+                    <div class="flex gap-1 items-center" >
+                        <div class="w-2 h-2 rounded-full bg-red-700 shadow-md"></div>
+                        <div class="text-base font-medium text-black">Test Task</div>
+                    </div>
+                    <div class="text-base font-normal text-red-700 w-13 h-7 border-2 border-slate-100 bg-red-100 px-1 rounded-lg my-1 ">High</div>
+                    
+                    <div class="flex items-center -space-x-2">
+                        <div class="w-7 h-7 rounded-full bg-blue-500 px-1  border-2 border-white">CA</div>
+                        <div  class="w-7 h-7 rounded-full bg-blue-500 px-1 border-2 border-white">JS</div>
+                        <div  class="w-7 h-7 rounded-full bg-blue-500 px-1 border-2 border-white">EV</div>
+                        <div  class="w-7 h-7 rounded-full bg-blue-500 px-1 border-2 border-white">B</div>
+                    </div>
+                
+                    <div class="text-zinc-500">10 months ago</div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+ {% endblock tasks %}
